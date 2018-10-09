@@ -1,0 +1,4 @@
+.nvmrc
+output_sample.png
+*.test.js
+.circleci/
