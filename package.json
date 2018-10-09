@@ -23,12 +23,7 @@
   },
   "homepage": "https://github.com/tomsquest/q.js#readme",
   "standard": {
-    "globals": [
-      "test",
-      "expect",
-      "beforeEach",
-      "afterEach"
-    ]
+    "env": [ "jest" ]
   },
   "devDependencies": {
     "@types/jest": "23.3.3",
