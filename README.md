@@ -1,6 +1,7 @@
 # Q
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![CircleCI](https://circleci.com/gh/tomsquest/q.js.svg?style=svg)](https://circleci.com/gh/tomsquest/q.js)
 
 Q is a better way to do print statement debugging.
 
