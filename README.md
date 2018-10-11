@@ -2,6 +2,7 @@
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![CircleCI](https://circleci.com/gh/tomsquest/q.js.svg?style=svg)](https://circleci.com/gh/tomsquest/q.js)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3f3e1c584e644410a17475779125a671)](https://www.codacy.com/app/tomsquest/q.js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tomsquest/q.js&amp;utm_campaign=Badge_Grade)
 
 Q is a better way to do print statement debugging.
 
