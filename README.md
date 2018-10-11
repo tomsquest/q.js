@@ -17,10 +17,16 @@ Type `q` instead of `console.log` and your variables will be printed like this i
 * Does not go to noisy-ass stdout. It goes to `$TMPDIR/q`.
 * Pretty colors!
 
+## Install
+
+```sh
+npm install --global dd
+```
+
 ## Usage
 
 ```js
-const q = require("q");
+const q = require("dd");
 ...
 q(a, b, c)
 ```
@@ -36,17 +42,11 @@ tail -f /tmp/q
 
 For best results, dedicate a terminal to tailing `$TMPDIR/q` while you work.
 
-## Install
-
-```sh
-npm install --global q
-```
-
 ## Haven't I seen this somewhere before?
 
-Python programmers will recognize this as a Javascript port of the [`q` module by zestyping](https://github.com/zestyping/q).
+**Python** programmers will recognize this as a Javascript port of the [`q` module by zestyping](https://github.com/zestyping/q).
 
-Go programmers will recognize this as a port of the [`q` module by y0ssar1an](https://github.com/y0ssar1an/q).
+**Go** programmers will recognize this as a port of the [`q` module by y0ssar1an](https://github.com/y0ssar1an/q).
 
 Ping does a great job of explaining `q` in his awesome lightning talk from PyCon 2013. Watch it! It's funny :)
 
@@ -58,6 +58,15 @@ Ping does a great job of explaining `q` in his awesome lightning talk from PyCon
 
 It's quick to type.
 
+### Why `dd`?
+
+On NPM, the `q` and `qdd` (like 'Quick-and-Dirty Debugging') were already existing.   
+`dd` seems to be a good choice, short and meaning **D**irty **D**ebugging.
+
 ### Is `q` safe for concurrent use?
 
 Yes.
+
+### Haven't I seen this README somewhere before?
+
+Yes, it is largely inspired by the very good README of the [`q` module by y0ssar1an](https://github.com/y0ssar1an/q).
