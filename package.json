@@ -2,7 +2,7 @@
   "name": "qqd",
   "version": "1.0.0",
   "description": "Quick-and-dirty debugging output for tired programmers",
-  "main": "q.js",
+  "main": "index.js",
   "scripts": {
     "test": "standard --fix && jest"
   },
@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/tomsquest/q.js#readme",
   "standard": {
-    "env": [ "jest" ]
+    "env": [
+      "jest"
+    ]
   },
   "devDependencies": {
     "@types/jest": "23.3.3",
