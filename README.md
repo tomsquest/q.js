@@ -24,7 +24,7 @@ Type `q` instead of `console.log` and your variables will be printed like this i
 npm install --global qqd
 ```
 
-_Hint: `qqd` is for **Q** does **D**irty **D**ebugging._
+Tips: `qqd` is for "**Q** is **Q**uick **D**ebugging".
 
 ## Usage
 
@@ -63,8 +63,8 @@ It's quick to type.
 
 ### Why `qqd`?
 
-On NPM, the `q`, `dd` and even `qdd` (like 'Quick-and-Dirty Debugging') were already published.   
-`qqd` seems to be a good choice, short and meaning **Q** does **D**irty **D**ebugging.
+On NPM, the `q`, `dd` and even `qdd` (like 'Quick-and-Dirty Debugging') were already published.  
+`qqd` seems to be a good choice, short and meaning **Q** is **Q**uick **D**ebugging.
 
 ### Is `q` safe for concurrent use?
 
