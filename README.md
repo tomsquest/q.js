@@ -4,7 +4,7 @@
 [![CircleCI](https://circleci.com/gh/tomsquest/q.js.svg?style=svg)](https://circleci.com/gh/tomsquest/q.js)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3f3e1c584e644410a17475779125a671)](https://www.codacy.com/app/tomsquest/q.js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tomsquest/q.js&amp;utm_campaign=Badge_Grade)
 
-Q is a better way to do print statement debugging.
+**`q`** is a better way to do print statement debugging.
 
 Type `q` instead of `console.log` and your variables will be printed like this in `$TMPDIR/q`:
 
@@ -21,15 +21,15 @@ Type `q` instead of `console.log` and your variables will be printed like this i
 ## Install
 
 ```sh
-npm install --global dd
+npm install --global qqd
 ```
 
-_Hint: `dd` is for **D**irty **D**ebugging._
+_Hint: `qqd` is for **Q** does **D**irty **D**ebugging._
 
 ## Usage
 
 ```js
-const { q } = require("dd");
+const { q } = require("qqd");
 ...
 q(a, b, c)
 ```
@@ -61,10 +61,10 @@ Ping does a great job of explaining `q` in his awesome lightning talk from PyCon
 
 It's quick to type.
 
-### Why `dd`?
+### Why `qqd`?
 
-On NPM, the `q` and `qdd` (like 'Quick-and-Dirty Debugging') were already existing.   
-`dd` seems to be a good choice, short and meaning **D**irty **D**ebugging.
+On NPM, the `q`, `dd` and even `qdd` (like 'Quick-and-Dirty Debugging') were already published.   
+`qqd` seems to be a good choice, short and meaning **Q** does **D**irty **D**ebugging.
 
 ### Is `q` safe for concurrent use?
 
