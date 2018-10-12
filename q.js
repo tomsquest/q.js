@@ -47,4 +47,6 @@ if (require.main === module) {
   q('foo', { foo: 'bar', baz: 'qix' })
 }
 
-module.exports = q
+module.exports = {
+  q
+}

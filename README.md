@@ -24,10 +24,12 @@ Type `q` instead of `console.log` and your variables will be printed like this i
 npm install --global dd
 ```
 
+_Hint: `dd` is for **D**irty **D**ebugging._
+
 ## Usage
 
 ```js
-const q = require("dd");
+const { q } = require("dd");
 ...
 q(a, b, c)
 ```
