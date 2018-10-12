@@ -3,22 +3,20 @@ const path = require('path')
 const fs = require('fs')
 const util = require('util')
 
-function q () {
+const q = (...args) => {
   const time = new Date().toISOString()
   const dir = process.env.TMPDIR || os.tmpdir()
   const file = path.join(dir, 'q')
 
-  const data = arguments.length === 0
+  const data = args.length === 0
     ? undefined
-    : Array.from(arguments)
-      .map(arg => util.inspect(arg, {
-        colors: process.env.Q_COLOR !== 'false',
-        depth: null,
-        maxArrayLength: null,
-        showProxy: true,
-        breakLength: -1
-      }))
-      .join(', ')
+    : args.map(arg => util.inspect(arg, {
+      colors: process.env.Q_COLOR !== 'false',
+      depth: null,
+      maxArrayLength: null,
+      showProxy: true,
+      breakLength: -1
+    })).join(', ')
 
   fs.writeFileSync(
     file,
