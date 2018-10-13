@@ -6,13 +6,13 @@ const { q } = require('./index')
 test('no arg', () => {
   q()
 
-  expect(qContent()).toMatch(/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z /)
+  expect(qContent()).toMatch(/\d{2}:\d{2}:\d{2} /)
 })
 
 test('undefined', () => {
   q(undefined)
 
-  expect(qContent()).toMatch(/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z undefined/)
+  expect(qContent()).toMatch(/\d{2}:\d{2}:\d{2} undefined/)
 })
 
 test('[]', () => {
@@ -30,31 +30,31 @@ test('{}', () => {
 test('a string', () => {
   q('a string')
 
-  expect(qContent()).toMatch(/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z 'a string'/)
+  expect(qContent()).toMatch(/\d{2}:\d{2}:\d{2} 'a string'/)
 })
 
 test('many values', () => {
   q(true, 42, 'foo')
 
-  expect(qContent()).toMatch(/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z true, 42, 'foo'/)
+  expect(qContent()).toMatch(/\d{2}:\d{2}:\d{2} true, 42, 'foo'/)
 })
 
 test('an array', () => {
   q([true, 42, 'foo'])
 
-  expect(qContent()).toMatch(/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z \[ true,\r?\n|\r {2}42,\r?\n|\r {2}'foo' ]/)
+  expect(qContent()).toMatch(/\d{2}:\d{2}:\d{2} \[ true,\r?\n|\r {2}42,\r?\n|\r {2}'foo' ]/)
 })
 
 test('a simple object', () => {
   q({ foo: 'bar' })
 
-  expect(qContent()).toMatch(/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z { foo: 'bar' }/)
+  expect(qContent()).toMatch(/\d{2}:\d{2}:\d{2} { foo: 'bar' }/)
 })
 
 test('a complex object', () => {
   q({ foo: ['bar', 'qix'], bar: { child: true } })
 
-  expect(qContent()).toMatch(/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z { foo: \r?\n|\r {2}\[ 'bar',\r?\n|\r {2}qix' ],\r?\n|\r {2}bar:\r?\n|\r {2}{ child: true } }/)
+  expect(qContent()).toMatch(/\d{2}:\d{2}:\d{2} { foo: \r?\n|\r {2}\[ 'bar',\r?\n|\r {2}qix' ],\r?\n|\r {2}bar:\r?\n|\r {2}{ child: true } }/)
 })
 
 beforeEach(() => {

@@ -4,7 +4,7 @@ const fs = require('fs')
 const util = require('util')
 
 const q = (...args) => {
-  const time = new Date().toISOString()
+  const time = new Date().toISOString().slice(11, 19)
   const dir = process.env.TMPDIR || os.tmpdir()
   const file = path.join(dir, 'q')
 
