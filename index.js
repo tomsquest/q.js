@@ -3,15 +3,24 @@ const path = require('path')
 const fs = require('fs')
 const util = require('util')
 
+const colors = {
+  yellow: `\u001B[33m`,
+  reset: '\u001B[0m'
+}
+
 const q = (...args) => {
+  const enableColors = process.env.Q_COLOR !== 'false'
+
   const time = new Date().toISOString().slice(11, 19)
+  const colorizedTime = enableColors ? `${colors.yellow}${time}${colors.reset}` : time
+
   const dir = process.env.TMPDIR || os.tmpdir()
   const file = path.join(dir, 'q')
 
   const data = args.length === 0
     ? undefined
     : args.map(arg => util.inspect(arg, {
-      colors: process.env.Q_COLOR !== 'false',
+      colors: enableColors,
       depth: null,
       maxArrayLength: null,
       showProxy: true,
@@ -20,7 +29,7 @@ const q = (...args) => {
 
   fs.writeFileSync(
     file,
-    `${time} ${data}${os.EOL}`,
+    `${colorizedTime} ${data}${os.EOL}`,
     { flag: 'a' })
 }
 
