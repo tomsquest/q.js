@@ -1,5 +1,5 @@
 .nvmrc
-output_sample.png
+*.png
 *.test.js
 .circleci/
 .idea/

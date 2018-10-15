@@ -53,7 +53,7 @@ For best results, dedicate a terminal to tailing `$TMPDIR/q` while you work.
 
 Ping does a great job of explaining `q` in his awesome lightning talk from PyCon 2013. Watch it! It's funny :)
 
-[![ping's PyCon 2013 lightning talk](https://img.youtube.com/vi/OL3De8BAhME/0.jpg)](https://youtu.be/OL3De8BAhME?t=25m14s)
+[![ping's PyCon 2013 lightning talk](q_presentation.png)](https://youtu.be/OL3De8BAhME?t=25m14s)
 
 ## FAQ
 
