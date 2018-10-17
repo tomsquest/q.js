@@ -45,6 +45,25 @@ tail -f /tmp/q
 
 For best results, dedicate a terminal to tailing `$TMPDIR/q` while you work.
 
+## Editor integrations
+
+### Jetbrains Intellij and Webstorm
+
+1. In `Settings`
+1. Open `Editor` > `Live Templates`
+1. In `JavaScript`, add a new template
+1. Click on `Define` next to `No applicable contexts yet` and pick `JavaScript and TypeScript`
+1. Set:
+    - Abbreviation: `qq`
+    - Description: `Pretty-print with Q`
+    - Template Text: `
+    const {q} = require('qqd');
+    q($VAR$);`
+1. Open `Edit variables` and pick `completeSmart()` in the `Expression` column
+1. Press `OK`
+
+![Add live template in Jetbrains Intellij](jetbrains_add_live_template.png)
+
 ## Haven't I seen this somewhere before?
 
 **Python** programmers will recognize this as a Javascript port of the [`q` module by zestyping](https://github.com/zestyping/q).
