@@ -31,7 +31,10 @@ Tips: `qqd` is for "**Q** is **Q**uick **D**ebugging".
 ```js
 const { q } = require("qqd");
 ...
-q(a, b, c)
+q(a, b, c);
+
+// Or shorter
+require('qqd').q(a, b, c);
 ```
 
 Then tail the `q` file:
@@ -57,8 +60,7 @@ For best results, dedicate a terminal to tailing `$TMPDIR/q` while you work.
     - Abbreviation: `qq`
     - Description: `Pretty-print with Q`
     - Template Text: `
-    const {q} = require('qqd');
-    q($VAR$);`
+    require('qqd').q($VAR$);`
 1. Open `Edit variables` and pick `completeSmart()` in the `Expression` column
 1. Press `OK`
 
