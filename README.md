@@ -64,6 +64,24 @@ For best results, dedicate a terminal to tailing `$TMPDIR/q` while you work.
 
 ![Add live template in Jetbrains Intellij](docs/jetbrains_add_live_template.png)
 
+## Shell Integration
+
+To quickly open the Q file and clearing it, [these two functions are useful](https://raw.githubusercontent.com/tomsquest/q.plugin.zsh/master/q.plugin.zsh). 
+
+Note that the is also a ZSH Plugin, see below.
+
+### ZSH Plugin for Q
+
+This plugin add the two functions seen above to your shell: https://github.com/tomsquest/q.plugin.zsh
+
+Usage with Zgen:
+
+```bash
+if ! zgen saved; then
+  ...
+  zgen load tomsquest/q.plugin.zsh
+```
+
 ## Haven't I seen this somewhere before?
 
 **Python** programmers will recognize this as a Javascript port of the [`q` module by zestyping](https://github.com/zestyping/q).
