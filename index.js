@@ -4,7 +4,7 @@ const fs = require('fs')
 const util = require('util')
 
 const colors = {
-  yellow: `\u001B[33m`,
+  yellow: '\u001B[33m',
   reset: '\u001B[0m'
 }
 
