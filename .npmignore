@@ -1,5 +1,5 @@
 .nvmrc
-*.png
+docs/
 *.test.js
 .circleci/
 .idea/

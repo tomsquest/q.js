@@ -8,7 +8,7 @@
 
 Type `q` instead of `console.log` and your variables will be printed like this in `$TMPDIR/q`:
 
-![output sample](output_sample.png)
+![output sample](docs/output_sample.png)
 
 ## Why is this better than `console.log`?
 
@@ -62,7 +62,7 @@ For best results, dedicate a terminal to tailing `$TMPDIR/q` while you work.
 1. Open `Edit variables` and pick `completeSmart()` in the `Expression` column
 1. Press `OK`
 
-![Add live template in Jetbrains Intellij](jetbrains_add_live_template.png)
+![Add live template in Jetbrains Intellij](docs/jetbrains_add_live_template.png)
 
 ## Haven't I seen this somewhere before?
 
@@ -72,7 +72,7 @@ For best results, dedicate a terminal to tailing `$TMPDIR/q` while you work.
 
 Ping does a great job of explaining `q` in his awesome lightning talk from PyCon 2013. Watch it! It's funny :)
 
-[![ping's PyCon 2013 lightning talk](q_presentation.png)](https://youtu.be/OL3De8BAhME?t=25m14s)
+[![ping's PyCon 2013 lightning talk](docs/q_presentation.png)](https://youtu.be/OL3De8BAhME?t=25m14s)
 
 ## FAQ
 
