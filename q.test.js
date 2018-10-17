@@ -1,7 +1,7 @@
 const path = require('path')
 const fs = require('fs')
 const os = require('os')
-const { q } = require('./index')
+const q = require('./q')
 
 test('no arg', () => {
   q()
