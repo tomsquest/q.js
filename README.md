@@ -1,14 +1,22 @@
 # Q
 
-[![CircleCI](https://circleci.com/gh/tomsquest/q.js.svg?style=svg)](https://circleci.com/gh/tomsquest/q.js)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3f3e1c584e644410a17475779125a671)](https://www.codacy.com/app/tomsquest/q.js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tomsquest/q.js&amp;utm_campaign=Badge_Grade)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+<div align="center">
 
-**`q`** is a better way to do print statement debugging.
+![Version](https://img.shields.io/npm/v/qqd.svg?style=for-the-badge)
+![Master branch](https://img.shields.io/circleci/project/github/tomsquest/q.js/master.svg?style=for-the-badge)
+![Quality grade](https://img.shields.io/codacy/grade/3f3e1c584e644410a17475779125a671/master.svg?style=for-the-badge)
 
-Type `q` instead of `console.log` and your variables will be printed like this in `$TMPDIR/q`:
+</div>
+
+> **`q`** is a better way to do print statement debugging.
+
+> Type `q` instead of `console.log` and your variables will be printed like this in `$TMPDIR/q`:
+
+<h3 align="center">
 
 ![output sample](docs/output_sample.png)
+
+</h3>
 
 ## Why is this better than `console.log`?
 
