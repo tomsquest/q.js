@@ -12,11 +12,11 @@ Type `q` instead of `console.log` and your variables will be printed like this i
 
 ## Why is this better than `console.log`?
 
-* Faster to type
-* Pretty-printed vars and expressions
-* Easier to see inside objects
-* Does not go to noisy-ass stdout. It goes to `$TMPDIR/q`.
-* Pretty colors!
+* :zap: Faster to type
+* :bento: Pretty-printed vars and expressions
+* :mag: Easier to see inside objects
+* :see_no_evil: Does not go to noisy-ass stdout. It goes to `$TMPDIR/q`.
+* :art: Pretty colors!
 
 ## Install
 
