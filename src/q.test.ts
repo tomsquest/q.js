@@ -1,7 +1,7 @@
-const path = require('path')
-const fs = require('fs')
-const os = require('os')
-const q = require('./q')
+import * as path from 'path'
+import * as fs from 'fs'
+import * as os from 'os'
+import { q } from './q'
 
 test('no arg', () => {
   q()
@@ -63,10 +63,10 @@ beforeEach(() => {
 })
 
 afterEach(() => {
-  fs.unlinkSync(path.join(process.env.TMPDIR, 'q'))
-  fs.rmdirSync(process.env.TMPDIR)
+  fs.unlinkSync(path.join(process.env.TMPDIR!, 'q'))
+  fs.rmdirSync(process.env.TMPDIR!)
 })
 
 const qContent = () => {
-  return fs.readFileSync(path.join(process.env.TMPDIR, 'q'), 'utf-8')
+  return fs.readFileSync(path.join(process.env.TMPDIR!, 'q'), 'utf-8')
 }

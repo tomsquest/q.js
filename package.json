@@ -2,10 +2,13 @@
   "name": "qqd",
   "version": "1.3.1",
   "description": "Quick-and-dirty debugging output for tired programmers",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "lint": "standard --fix",
-    "test": "jest"
+    "lint": "standard --fix **/*.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "pack build",
+    "publish": "pack publish"
   },
   "repository": {
     "type": "git",
@@ -26,15 +29,27 @@
   "standard": {
     "env": [
       "jest"
+    ],
+    "parser": "typescript-eslint-parser",
+    "plugins": [
+      "typescript"
     ]
   },
   "devDependencies": {
-    "@types/jest": "23.3.9",
-    "@types/node": "10.12.2",
-    "husky": "1.1.3",
+    "@pika/pack": "0.3.5",
+    "@pika/plugin-build-node": "0.3.14",
+    "@pika/plugin-ts-standard-pkg": "0.3.14",
+    "@types/jest": "24.0.11",
+    "@types/node": "11.11.0",
+    "eslint-plugin-typescript": "0.14.0",
+    "husky": "1.3.1",
     "jest": "23.6.0",
-    "lint-staged": "8.0.4",
-    "standard": "12.0.1"
+    "lint-staged": "8.1.5",
+    "rimraf": "2.6.3",
+    "standard": "12.0.1",
+    "ts-jest": "23.10.5",
+    "typescript": "3.2.1",
+    "typescript-eslint-parser": "22.0.0"
   },
   "husky": {
     "hooks": {
@@ -42,9 +57,29 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "src/**/**.ts": [
       "npm run lint",
       "git add"
+    ]
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "rootDir": "src"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-ts-standard-pkg",
+        {
+          "exclude": [
+            "**/*.test.ts"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ]
     ]
   }
 }
