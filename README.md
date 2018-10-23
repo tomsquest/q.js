@@ -97,7 +97,7 @@ zgen load tomsquest/q.plugin.zsh
 
 Ping does a great job of explaining `q` in his awesome lightning talk from PyCon 2013. Watch it! It's funny :)
 
-[![ping's PyCon 2013 lightning talk](docs/q_presentation.png)](https://youtu.be/OL3De8BAhME?t=25m14s)
+[![ping's PyCon 2013 lightning talk](docs/q_presentation.png)](https://youtu.be/OL3De8BAhME?t=25m14s) [![Greenkeeper badge](https://badges.greenkeeper.io/tomsquest/q.js.svg)](https://greenkeeper.io/)
 
 ## FAQ
 
