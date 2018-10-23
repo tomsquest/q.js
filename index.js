@@ -1,4 +1,4 @@
-const q = require('./q.js')
+const { q } = require('./q')
 
 module.exports = {
   q
