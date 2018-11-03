@@ -26,6 +26,10 @@
 * :see_no_evil: Does not go to noisy-ass stdout. It goes to `$TMPDIR/q`.
 * :art: Pretty colors!
 
+## Changelog
+
+> See [CHANGELOG.md](CHANGELOG.md)
+
 ## Install
 
 ```sh

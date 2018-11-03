@@ -1,5 +1,6 @@
-.nvmrc
 docs/
 *.test.js
 .circleci/
 .idea/
+.nvmrc
+wallaby.js
