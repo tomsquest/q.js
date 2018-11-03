@@ -9,7 +9,7 @@ const colors = {
 }
 
 const q = (...args) => {
-  const enableColors = process.env.Q_COLOR !== 'false'
+  const enableColors = !process.env.NO_COLOR
 
   const time = new Date().toISOString().slice(11, 19)
   const colorizedTime = enableColors ? `${colors.yellow}${time}${colors.reset}` : time

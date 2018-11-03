@@ -59,7 +59,7 @@ test('a complex object', () => {
 
 beforeEach(() => {
   process.env.TMPDIR = fs.mkdtempSync(`${os.tmpdir()}${path.sep}`)
-  process.env.Q_COLOR = 'false'
+  process.env.NO_COLOR = 'yes, it helps testing'
 })
 
 afterEach(() => {
