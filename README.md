@@ -26,6 +26,11 @@
 * :see_no_evil: Does not go to noisy-ass stdout. It goes to `$TMPDIR/q`.
 * :art: Pretty colors!
 
+Bonus points:
+
+* Provide a type definition for completion in IDE
+* Honor [NO_COLOR environment variable](https://no-color.org) to disable coloring
+
 ## Changelog
 
 > See [CHANGELOG.md](CHANGELOG.md)
