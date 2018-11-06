@@ -109,6 +109,18 @@ zgen load tomsquest/q.plugin.zsh
 
 ![Add live template in Jetbrains Intellij](docs/jetbrains_add_live_template.png)
 
+## TODO
+
+- [ ] Print file:line (`function.caller`)
+- [ ] Print function name
+- [ ] Print argument names
+- [ ] Separates batch of writes with a blank line (similar to the [GO `q` module](https://github.com/zestyping/q))
+- [ ] Publish to NPM registry on Tag
+- [ ] [JSdoc](http://usejsdoc.org)
+- [ ] Print stacktrace: `s()` (see (stackman)[https://www.npmjs.com/package/stackman])
+- [ ] (maybe) Typescript Decorator `@q` for function (and class)
+- [ ] (maybe) Print time spent
+
 ## Haven't I seen this somewhere before?
 
 **Python** programmers will recognize this as a Javascript port of the [`q` module by zestyping](https://github.com/zestyping/q).
