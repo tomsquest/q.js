@@ -65,6 +65,17 @@ To quickly open the Q file and clearing it, [these two functions are useful](htt
 
 Note that the is also a ZSH Plugin, see below.
 
+The two functions allows you to quickly tail Q, or to empty the Q file and tail it:
+
+```bash
+$ qq
+Tailing Q log...
+06:14:11 foobar
+
+$ rmqq # File is emptied before
+Tailing Q log...
+```
+
 ### ZSH Plugin for Q
 
 This plugin add the two functions seen above to your shell: https://github.com/tomsquest/q.plugin.zsh
