@@ -1,6 +1,6 @@
 {
   "name": "qqd",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Quick-and-dirty debugging output for tired programmers",
   "main": "src/index.js",
   "scripts": {
