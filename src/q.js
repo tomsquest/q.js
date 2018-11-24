@@ -24,7 +24,8 @@ const q = (...args) => {
       depth: null,
       maxArrayLength: null,
       showProxy: true,
-      breakLength: -1
+      breakLength: -1,
+      compact: false
     })).join(', ')
 
   fs.writeFileSync(

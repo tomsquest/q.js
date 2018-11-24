@@ -42,19 +42,19 @@ test('many values', () => {
 test('an array', () => {
   q([true, 42, 'foo'])
 
-  expect(qContent()).toMatch(/\d{2}:\d{2}:\d{2} \[ true,\r?\n|\r {2}42,\r?\n|\r {2}'foo' ]/)
+  expect(qContent()).toMatch(/\d{2}:\d{2}:\d{2} \[\r?\n|\r {2}true,\r?\n|\r {2}42,\r?\n|\r {2}'foo'\r?\n|\r]/)
 })
 
 test('a simple object', () => {
   q({ foo: 'bar' })
 
-  expect(qContent()).toMatch(/\d{2}:\d{2}:\d{2} { foo: 'bar' }/)
+  expect(qContent()).toMatch(/\d{2}:\d{2}:\d{2} {\r?\n|\r {2}foo: 'bar'\r?\n|\r}/)
 })
 
 test('a complex object', () => {
   q({ foo: ['bar', 'qix'], bar: { child: true } })
 
-  expect(qContent()).toMatch(/\d{2}:\d{2}:\d{2} { foo: \r?\n|\r {2}\[ 'bar',\r?\n|\r {2}qix' ],\r?\n|\r {2}bar:\r?\n|\r {2}{ child: true } }/)
+  expect(qContent()).toMatch(/\d{2}:\d{2}:\d{2} {\r?\n|\r {2}foo: \r?\n|\r {2}\[ 'bar',\r?\n|\r {2}qix' ],\r?\n|\r {2}bar:\r?\n|\r {2}{ child: true } }/)
 })
 
 beforeEach(() => {
