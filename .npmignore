@@ -1,8 +1,6 @@
-docs/
-.circleci/
-.idea/
+# Ignore everything
+*
 
-src/**/*.test.*
-.nvmrc
-wallaby.js
-tsconfig.json
+# Except
+!dist/**/*
+dist/**/*.test.*
