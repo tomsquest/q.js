@@ -1,6 +1,8 @@
 docs/
 .circleci/
 .idea/
+
+src/**/*.test.*
 .nvmrc
-src/*.test.js
 wallaby.js
+tsconfig.json

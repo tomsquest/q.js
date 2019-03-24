@@ -3,12 +3,12 @@
   "version": "1.4.0",
   "description": "Quick-and-dirty debugging output for tired programmers",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "lint": "standard --fix **/*.ts",
     "test": "jest",
     "test:watch": "jest --watch",
-    "build": "pack build",
-    "publish": "pack publish"
+    "build": "rimraf dist && tsc"
   },
   "repository": {
     "type": "git",
@@ -36,9 +36,6 @@
     ]
   },
   "devDependencies": {
-    "@pika/pack": "0.3.5",
-    "@pika/plugin-build-node": "0.3.14",
-    "@pika/plugin-ts-standard-pkg": "0.3.14",
     "@types/jest": "24.0.11",
     "@types/node": "11.11.0",
     "eslint-plugin-typescript": "0.14.0",
@@ -66,20 +63,5 @@
     "preset": "ts-jest",
     "testEnvironment": "node",
     "rootDir": "src"
-  },
-  "@pika/pack": {
-    "pipeline": [
-      [
-        "@pika/plugin-ts-standard-pkg",
-        {
-          "exclude": [
-            "**/*.test.ts"
-          ]
-        }
-      ],
-      [
-        "@pika/plugin-build-node"
-      ]
-    ]
   }
 }
