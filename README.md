@@ -38,7 +38,7 @@ Bonus points:
 ## Install
 
 ```sh
-npm install --global qqd
+npm install qqd
 ```
 
 Tips: `qqd` is for "**Q** is **Q**uick **D**ebugging".
@@ -68,9 +68,9 @@ For best results, dedicate a terminal to tailing `$TMPDIR/q` while you work, or 
 
 To quickly open the Q file and clearing it, [these two functions are useful](https://raw.githubusercontent.com/tomsquest/q.plugin.zsh/master/q.plugin.zsh). 
 
-Note that the is also a ZSH Plugin, see below.
+Note that there is also a ZSH Plugin, see below.
 
-The two functions allows you to quickly tail Q, or to empty the Q file and tail it:
+These two functions allows you to quickly tail Q, or to empty the Q file and tail it:
 
 ```bash
 $ qq
@@ -83,7 +83,7 @@ Tailing Q log...
 
 ### ZSH Plugin for Q
 
-This plugin add the two functions seen above to your shell: https://github.com/tomsquest/q.plugin.zsh
+The [Q Plugin for ZSH](https://github.com/tomsquest/q.plugin.zsh) adds the two functions, `qq` and `rmqq`, as seen above to your shell.
 
 Usage with Zgen:
 
@@ -111,6 +111,7 @@ zgen load tomsquest/q.plugin.zsh
 
 ## TODO
 
+- [ ] Disable on `production`
 - [ ] Print file:line (`function.caller`)
 - [ ] Print function name
 - [ ] Print argument names
@@ -118,28 +119,27 @@ zgen load tomsquest/q.plugin.zsh
 - [ ] Publish to NPM registry on Tag
 - [ ] [JSdoc](http://usejsdoc.org)
 - [ ] Print stacktrace: `s()` (see (stackman)[https://www.npmjs.com/package/stackman])
+- [ ] Prevent shipping in production code using an ESLint rule, or a custom ESLint plugin
 - [ ] (maybe) Typescript Decorator `@q` for function (and class)
 - [ ] (maybe) Print time spent
 
-## Haven't I seen this somewhere before?
+## FAQ
 
-**Python** programmers will recognize this as a Javascript port of the [`q` module by zestyping](https://github.com/zestyping/q).
+### Haven't I seen this somewhere before?
 
-**Go** programmers will recognize this as a port of the [`q` module by y0ssar1an](https://github.com/y0ssar1an/q).
+**Python** programmers will recognize this as a Javascript port of the [`q` module by zestyping](https://github.com/zestyping/q).  
+**Go** programmers will recognize this as a port of the [`q` module by y0ssar1an](https://github.com/y0ssar1an/q).  
 
 Ping does a great job of explaining `q` in his awesome lightning talk from PyCon 2013. Watch it! It's funny :)
-
 [![ping's PyCon 2013 lightning talk](docs/q_presentation.png)](https://youtu.be/OL3De8BAhME?t=25m14s)
-
-## FAQ
 
 ### Why `q`?
 
-It's quick to type.
+Because `q` is quick to type :zap:.
 
-### Why `qqd`?
+### Why the npm module is called `qqd`?
 
-On NPM, the `q`, `dd` and even `qdd` (like 'Quick-and-Dirty Debugging') were already published.  
+On NPM, the `q`, `dd` ("dirty debug") and even `qdd` ("quick dirty debug") were already published.  
 `qqd` seems to be a good choice, short and meaning **Q** is **Q**uick **D**ebugging.
 
 ### Is `q` safe for concurrent use?
