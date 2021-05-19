@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "esModuleInterop": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "baseUrl": "./src",
     "outDir": "./dist",
-    "rootDir": "./src",
+    "declaration": true,
     "sourceMap": true,
+    "incremental": true,
     "strict": true,
-    "target": "es2015"
+    "target": "es5",
+    "lib": ["es2020"],
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node"
   }
 }

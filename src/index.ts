@@ -1,5 +1,3 @@
-import { q } from './q'
+import { q } from "./q";
 
-export {
-  q
-}
+export { q };
