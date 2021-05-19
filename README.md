@@ -3,8 +3,6 @@
 <div align="center">
 
 [![Version](https://img.shields.io/npm/v/qqd.svg?style=for-the-badge)](https://www.npmjs.com/package/qqd)
-[![Master branch](https://img.shields.io/circleci/project/github/tomsquest/q.js/master.svg?style=for-the-badge)](https://circleci.com/gh/tomsquest/q.js)
-[![Quality grade](https://img.shields.io/codacy/grade/3f3e1c584e644410a17475779125a671/master.svg?style=for-the-badge)](https://www.codacy.com/project/tomsquest/q.js/dashboard)
 
 </div>
 
