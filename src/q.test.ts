@@ -63,16 +63,19 @@ test("a complex object", () => {
   );
 });
 
+let tmpDir: string;
+
 beforeEach(() => {
-  process.env.TMPDIR = fs.mkdtempSync(`${os.tmpdir()}${path.sep}`);
-  process.env.NO_COLOR = "yes, it helps testing";
+  tmpDir = fs.mkdtempSync(`${os.tmpdir()}${path.sep}`);
+  process.env.TMPDIR = tmpDir;
+  process.env.NO_COLOR = "disable color in test";
 });
 
 afterEach(() => {
-  fs.unlinkSync(path.join(process.env.TMPDIR!, "q"));
-  fs.rmdirSync(process.env.TMPDIR!);
+  fs.unlinkSync(path.join(tmpDir, "q"));
+  fs.rmdirSync(tmpDir);
 });
 
 const qContent = () => {
-  return fs.readFileSync(path.join(process.env.TMPDIR!, "q"), "utf-8");
+  return fs.readFileSync(path.join(tmpDir, "q"), "utf-8");
 };

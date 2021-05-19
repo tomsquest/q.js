@@ -8,7 +8,7 @@ const colors = {
   reset: "\u001B[0m",
 };
 
-export function q(...args: any[]): void {
+export function q(...args: unknown[]): void {
   const isProduction = process.env.NODE_ENV === "production";
   if (isProduction) {
     return;
@@ -26,7 +26,7 @@ export function q(...args: any[]): void {
 
   const data =
     args.length === 0
-      ? undefined
+      ? "undefined"
       : args
           .map((arg) =>
             util.inspect(arg, {
