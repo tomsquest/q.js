@@ -1,10 +1,6 @@
 # Q
 
-<div align="center">
-
 [![Version](https://img.shields.io/npm/v/qqd.svg?style=for-the-badge)](https://www.npmjs.com/package/qqd)
-
-</div>
 
 > 
 > **`q`** is a better way to do print statement debugging.
