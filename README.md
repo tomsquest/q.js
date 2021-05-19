@@ -6,9 +6,11 @@
 
 </div>
 
+> 
 > **`q`** is a better way to do print statement debugging.
-
+> 
 > Type `q` instead of `console.log` and your variables will be printed like this in `$TMPDIR/q`:
+> 
 
 <h3 align="center">
 
