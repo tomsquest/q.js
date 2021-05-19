@@ -107,7 +107,6 @@ zgen load tomsquest/q.plugin.zsh
 
 ## TODO
 
-- [ ] Disable on `production`
 - [ ] Print file:line (`function.caller`)
 - [ ] Print function name
 - [ ] Print argument names
@@ -137,6 +136,18 @@ Because `q` is quick to type :zap:.
 
 On NPM, the `q`, `dd` ("dirty debug") and even `qdd` ("quick dirty debug") were already published.  
 `qqd` seems to be a good choice, short and meaning **Q** is **Q**uick **D**ebugging.
+
+### Is `q` safe for concurrent use?
+
+Yes. Q uses `fs.writeFileSync()` so the writes are synchronous/blocking.
+
+### What about production?
+
+Q does not do anything if NODE_ENV is `production`.
+
+This is for safety: you do not want Q to write stuff when running in production.
+
+Still, it is advised to prevent shipping any calls to Q before shipping code (like you could to for `console.log`).
 
 ### Is `q` safe for concurrent use?
 

@@ -9,6 +9,11 @@ const colors = {
 };
 
 export function q(...args: any[]): void {
+  const isProduction = process.env.NODE_ENV === "production";
+  if (isProduction) {
+    return;
+  }
+
   const enableColors = !process.env.NO_COLOR;
 
   const time = new Date().toISOString().slice(11, 19);
