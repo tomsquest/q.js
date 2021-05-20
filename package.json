@@ -13,8 +13,8 @@
     "precommit": "npm run build && npm run prettier:fix && npm run lint:fix && npm test",
     "prepare": "husky install",
     "prepublishOnly": "npm run check",
-    "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write .",
+    "prettier": "prettier --check . '!dist/**'",
+    "prettier:fix": "prettier --write . '!dist/**'",
     "release": "np",
     "test": "jest",
     "test:watch": "jest --watch"
