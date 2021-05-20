@@ -14,7 +14,7 @@ module.exports = {
     "jest",
     "jest-formatting",
     "radar",
-    "only-error"
+    "only-error",
   ],
   extends: [
     "eslint:recommended",
@@ -25,6 +25,6 @@ module.exports = {
     "plugin:jest-formatting/recommended",
     "plugin:radar/recommended",
     // Must be last in the chain
-    "prettier"
+    "prettier",
   ],
 };

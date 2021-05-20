@@ -2,11 +2,9 @@
 
 [![Version](https://img.shields.io/npm/v/qqd.svg?style=for-the-badge)](https://www.npmjs.com/package/qqd)
 
-> 
 > **`q`** is a better way to do print statement debugging.
-> 
+>
 > Type `q` instead of `console.log` and your variables will be printed like this in `$TMPDIR/q`:
-> 
 
 <h3 align="center">
 
@@ -16,16 +14,16 @@
 
 ## Why is this better than `console.log`?
 
-* :zap: Faster to type
-* :bento: Pretty-printed vars and expressions
-* :mag: Easier to see inside objects
-* :see_no_evil: Does not go to noisy-ass stdout. It goes to `$TMPDIR/q`.
-* :art: Pretty colors!
+- :zap: Faster to type
+- :bento: Pretty-printed vars and expressions
+- :mag: Easier to see inside objects
+- :see_no_evil: Does not go to noisy-ass stdout. It goes to `$TMPDIR/q`.
+- :art: Pretty colors!
 
 Bonus points:
 
-* Provide a type definition for completion in IDE
-* Honor [NO_COLOR environment variable](https://no-color.org) to disable coloring
+- Provide a type definition for completion in IDE
+- Honor [NO_COLOR environment variable](https://no-color.org) to disable coloring
 
 ## Changelog
 
@@ -46,7 +44,7 @@ const { q } = require("qqd");
 q(a, b, c);
 
 // Or shorter
-require('qqd').q(a, b, c);
+require("qqd").q(a, b, c);
 ```
 
 Then tail the `q` file:
@@ -62,7 +60,7 @@ For best results, dedicate a terminal to tailing `$TMPDIR/q` while you work, or 
 
 ## Shell Integration
 
-To quickly open the Q file and clearing it, [these two functions are useful](https://raw.githubusercontent.com/tomsquest/q.plugin.zsh/master/q.plugin.zsh). 
+To quickly open the Q file and clearing it, [these two functions are useful](https://raw.githubusercontent.com/tomsquest/q.plugin.zsh/master/q.plugin.zsh).
 
 Note that there is also a ZSH Plugin, see below.
 
@@ -96,10 +94,9 @@ zgen load tomsquest/q.plugin.zsh
 1. In `JavaScript`, add a new template
 1. Click on `Define` next to `No applicable contexts yet` and pick `JavaScript and TypeScript`
 1. Set:
-    - Abbreviation: `qq`
-    - Description: `Pretty-print with Q`
-    - Template Text: `
-    require('qqd').q($VAR$);`
+   - Abbreviation: `qq`
+   - Description: `Pretty-print with Q`
+   - Template Text: `require('qqd').q($VAR$);`
 1. Open `Edit variables` and pick `completeSmart()` in the `Expression` column
 1. Press `OK`
 
@@ -123,7 +120,7 @@ zgen load tomsquest/q.plugin.zsh
 ### Haven't I seen this somewhere before?
 
 **Python** programmers will recognize this as a Javascript port of the [`q` module by zestyping](https://github.com/zestyping/q).  
-**Go** programmers will recognize this as a port of the [`q` module by y0ssar1an](https://github.com/y0ssar1an/q).  
+**Go** programmers will recognize this as a port of the [`q` module by y0ssar1an](https://github.com/y0ssar1an/q).
 
 Ping does a great job of explaining `q` in his awesome lightning talk from PyCon 2013. Watch it! It's funny :)
 [![ping's PyCon 2013 lightning talk](docs/q_presentation.png)](https://youtu.be/OL3De8BAhME?t=25m14s)
