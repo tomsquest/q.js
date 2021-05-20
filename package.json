@@ -7,12 +7,14 @@
   "scripts": {
     "build": "tsc",
     "clean": "rimraf dist",
+    "check": "npm run clean && npm run build && npm run prettier && npm run lint && npm test",
     "lint": "eslint src --ext .ts",
     "lint:fix": "npm run lint -- --fix",
-    "precommit": "npm run prettier:fix && npm run lint && npm test",
+    "precommit": "npm run build && npm run prettier:fix && npm run lint:fix && npm test",
     "prepare": "husky install",
-    "prepublishOnly": "npm run clean && npm run build",
-    "prettier:fix": "prettier --write --no-config '*.json' 'src/**/*.{ts,json}'",
+    "prepublishOnly": "npm run check",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
     "release": "np",
     "test": "jest",
     "test:watch": "jest --watch"
