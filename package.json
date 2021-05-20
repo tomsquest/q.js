@@ -1,6 +1,6 @@
 {
   "name": "qqd",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Quick-and-dirty debugging output for tired programmers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
