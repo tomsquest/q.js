@@ -1,6 +1,7 @@
 # Q
 
 [![Version](https://img.shields.io/npm/v/qqd.svg?style=for-the-badge)](https://www.npmjs.com/package/qqd)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/tomsquest/q.js/check?style=for-the-badge)
 
 > **`q`** is a better way to do print statement debugging.
 >
