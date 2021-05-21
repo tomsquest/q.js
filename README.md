@@ -1,11 +1,16 @@
-# Q
+# ⚡ Quick-and-dirty debugging output for tired JS programmers
 
 [![Version](https://img.shields.io/npm/v/qqd.svg?style=for-the-badge)](https://www.npmjs.com/package/qqd)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/tomsquest/q.js/check?style=for-the-badge)
 
+
+## What is Q
+
 > **`q`** is a better way to do print statement debugging.
 >
-> Type `q` instead of `console.log` and your variables will be printed like this in `$TMPDIR/q`:
+> Type `q` instead of `console.log` and your variables will be printed like this in `$TMPDIR/q`.
+
+## Sample output in `$TMPDIR/q`
 
 <h3 align="center">
 
@@ -61,9 +66,9 @@ For best results, dedicate a terminal to tailing `$TMPDIR/q` while you work, or 
 
 ## Shell Integration
 
-To quickly open the Q file and clearing it, [these two functions are useful](https://raw.githubusercontent.com/tomsquest/q.plugin.zsh/master/q.plugin.zsh).
+To quickly open the Q file and clearing it, [add this two functions](https://raw.githubusercontent.com/tomsquest/q.plugin.zsh/master/q.plugin.zsh) to your shell.
 
-Note that there is also a ZSH Plugin, see below.
+Note that there is also a ZSH Plugin, [see the instructions below](#zsh-plugin-for-q).
 
 These two functions allows you to quickly tail Q, or to empty the Q file and tail it:
 
@@ -78,12 +83,23 @@ Tailing Q log...
 
 ### ZSH Plugin for Q
 
-The [Q Plugin for ZSH](https://github.com/tomsquest/q.plugin.zsh) adds the two functions, `qq` and `rmqq`, as seen above to your shell.
+The [ZSH Plugin for Q](https://github.com/tomsquest/q.plugin.zsh) adds the two functions, `qq` and `rmqq`, as seen above to your shell.
 
-Usage with Zgen:
+Usage with Zgen (or any ZSH plugin manager):
 
 ```bash
 zgen load tomsquest/q.plugin.zsh
+```
+
+Then you can:
+
+```bash
+$ qq
+Tailing Q log...
+06:14:11 foobar
+
+$ rmqq # File is emptied before
+Tailing Q log...
 ```
 
 ## Editor integrations
