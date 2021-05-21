@@ -3,7 +3,6 @@
 [![Version](https://img.shields.io/npm/v/qqd.svg?style=for-the-badge)](https://www.npmjs.com/package/qqd)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/tomsquest/q.js/check?style=for-the-badge)
 
-
 ## What is Q
 
 > **`q`** is a better way to do print statement debugging.
@@ -144,7 +143,7 @@ Ping does a great job of explaining `q` in his awesome lightning talk from PyCon
 
 ### Why `q`?
 
-Because `q` is quick to type :zap:.
+Because `q` is quick to type ⚡⚡⚡.
 
 ### Why the npm module is called `qqd`?
 
@@ -162,10 +161,6 @@ Q does not do anything if NODE_ENV is `production`.
 This is for safety: you do not want Q to write stuff when running in production.
 
 Still, it is advised to prevent shipping any calls to Q before shipping code (like you could to for `console.log`).
-
-### Is `q` safe for concurrent use?
-
-Yes.
 
 ### Haven't I seen this README somewhere before?
 
