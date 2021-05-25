@@ -186,6 +186,19 @@ This is for safety: you do not want Q to write stuff when running in production.
 
 Still, it is advised to prevent shipping any calls to Q before shipping code (like you could to for `console.log`).
 
+### How to prevent calls to Q in production?
+
+With ESLint, add the ["Disallow specific imports (no-restricted-imports)"](https://eslint.org/docs/rules/no-restricted-imports) rules to an existing `.eslintrc.js`:
+
+```
+"no-restricted-imports": ["error", "qqd"]
+```
+
+Alternative for Node.js, the [ESLint Node plugin]() provides two rules:
+
+- [node/no-restricted-import](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-restricted-import.md)
+- [node/no-restricted-require](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-restricted-require.md)
+
 ### Haven't I seen this README somewhere before?
 
 Yes, it is largely inspired by the very good README of the [`q` module by y0ssar1an](https://github.com/y0ssar1an/q).
