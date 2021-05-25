@@ -105,28 +105,52 @@ Tailing Q log...
 
 ### Jetbrains Intellij and Webstorm
 
+#### For JavaScript:
+
 1. In `Settings`
 1. Open `Editor` > `Live Templates`
 1. In `JavaScript`, add a new template
 1. Click on `Define` next to `No applicable contexts yet` and pick `JavaScript and TypeScript`
 1. Set:
-   - Abbreviation: `qq`
+   - Abbreviation: `q`
    - Description: `Pretty-print with Q`
-   - Template Text: `require('qqd').q($VAR$);`
+   - Template Text: `q($VAR$);`
 1. Open `Edit variables` and pick `completeSmart()` in the `Expression` column
 1. Press `OK`
 
-![Add live template in Jetbrains Intellij](docs/jetbrains_add_live_template.png)
+![Add JavaScript live template in Jetbrains Intellij](docs/jetbrains_add_live_template_javascript.png)
+
+#### For TypeScript:
+
+1. In `Settings`
+1. Open `Editor` > `Live Templates`
+1. Click on the `+` icon and select > `Template Group` and fill "TypeScript"
+1. Go to the newly created group `TypeScript`, add a new template
+1. Click on `Define` next to `No applicable contexts yet` and pick `TypeScript`
+1. Set:
+   - Abbreviation: `q`
+   - Description: `Pretty-print with Q`
+   - Template Text: `q($VAR$);`
+1. Open `Edit variables` and pick `completeSmart()` in the `Expression` column
+1. Press `OK`
+
+![Add Typescript live template in Jetbrains Intellij](docs/jetbrains_add_live_template_typescript.png)
+
+#### Sample usage
+
+Here, by pressing `q`, I can select the first, or the second option:
+
+![Live template usage](docs/jetbrains_live_template_usage.png.png)
 
 ## TODO
 
 - [ ] Print file:line (`function.caller`)
 - [ ] Print function name
 - [ ] Print argument names
-- [ ] Separates batch of writes with a blank line (similar to the [GO `q` module](https://github.com/zestyping/q))
+- [ ] Separates batch of writes with a blank line or a separator (similar to the [GO `q` module](https://github.com/zestyping/q))
 - [ ] Publish to NPM registry on Tag
 - [ ] [JSdoc](http://usejsdoc.org)
-- [ ] Print stacktrace: `s()` (see (stackman)[https://www.npmjs.com/package/stackman])
+- [ ] Print stacktrace: `s()` (see [stackman](https://www.npmjs.com/package/stackman))
 - [ ] Prevent shipping in production code using an ESLint rule, or a custom ESLint plugin
 - [ ] (maybe) Typescript Decorator `@q` for function (and class)
 - [ ] (maybe) Print time spent
