@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Q.JS](docs/logo.png)
+![Q.JS](doc/logo.png)
 
 </div>
 
@@ -19,7 +19,7 @@
 
 <h3 align="center">
 
-![output sample](docs/output_sample.png)
+![output sample](doc/output_sample.png)
 
 </h3>
 
@@ -124,7 +124,7 @@ Tailing Q log...
 1. Open `Edit variables` and pick `completeSmart()` in the `Expression` column
 1. Press `OK`
 
-![Add JavaScript live template in Jetbrains Intellij](docs/jetbrains_add_live_template_javascript.png)
+![Add JavaScript live template in Jetbrains Intellij](doc/jetbrains_add_live_template_javascript.png)
 
 #### For TypeScript:
 
@@ -140,13 +140,13 @@ Tailing Q log...
 1. Open `Edit variables` and pick `completeSmart()` in the `Expression` column
 1. Press `OK`
 
-![Add Typescript live template in Jetbrains Intellij](docs/jetbrains_add_live_template_typescript.png)
+![Add Typescript live template in Jetbrains Intellij](doc/jetbrains_add_live_template_typescript.png)
 
 #### Sample usage
 
 Here, by pressing `q`, I can select the first, or the second option:
 
-![Live template usage](docs/jetbrains_live_template_usage.png.png)
+![Live template usage](doc/jetbrains_live_template_usage.png.png)
 
 ## FAQ
 
@@ -156,7 +156,7 @@ Here, by pressing `q`, I can select the first, or the second option:
 **Go** programmers will recognize this as a port of the [`q` module by y0ssar1an](https://github.com/y0ssar1an/q).
 
 Ping does a great job of explaining `q` in his awesome lightning talk from PyCon 2013. Watch it! It's funny :)
-[![ping's PyCon 2013 lightning talk](docs/q_presentation.png)](https://youtu.be/OL3De8BAhME?t=25m14s)
+[![ping's PyCon 2013 lightning talk](doc/q_presentation.png)](https://youtu.be/OL3De8BAhME?t=25m14s)
 
 ### Why `q`?
 
@@ -181,7 +181,7 @@ Still, it is advised to prevent shipping any calls to Q before shipping code (li
 
 ### How to prevent calls to Q in production?
 
-With ESLint, add the ["Disallow specific imports (no-restricted-imports)"](https://eslint.org/docs/rules/no-restricted-imports) rules to an existing `.eslintrc.js`:
+With ESLint, add the ["Disallow specific imports (no-restricted-imports)"](https://eslint.org/doc/rules/no-restricted-imports) rules to an existing `.eslintrc.js`:
 
 ```
 "no-restricted-imports": ["error", "qqd"]
@@ -189,8 +189,8 @@ With ESLint, add the ["Disallow specific imports (no-restricted-imports)"](https
 
 Alternative for Node.js, the [ESLint Node plugin]() provides two rules:
 
-- [node/no-restricted-import](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-restricted-import.md)
-- [node/no-restricted-require](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-restricted-require.md)
+- [node/no-restricted-import](https://github.com/mysticatea/eslint-plugin-node/blob/master/doc/rules/no-restricted-import.md)
+- [node/no-restricted-require](https://github.com/mysticatea/eslint-plugin-node/blob/master/doc/rules/no-restricted-require.md)
 
 ### Haven't I seen this README somewhere before?
 
