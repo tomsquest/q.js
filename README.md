@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="docs/logo.png" title="Q.JS" alt="Q.JS Logo">
+![Q.JS](docs/logo.png)
 
 </div>
 
