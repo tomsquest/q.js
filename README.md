@@ -13,9 +13,9 @@
 
 > **`q`** is a better way to do print statement debugging.
 >
-> Type `q` instead of `console.log` and your variables will be printed like this in `$TMPDIR/q`.
+> Use `q` instead of `console.log` and your variables will be nicely printed in `$TMPDIR/q`.
 
-## Sample output in `$TMPDIR/q`
+## Sample output of using `q()`
 
 <h3 align="center">
 
