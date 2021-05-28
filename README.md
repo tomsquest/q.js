@@ -148,19 +148,6 @@ Here, by pressing `q`, I can select the first, or the second option:
 
 ![Live template usage](docs/jetbrains_live_template_usage.png.png)
 
-## TODO
-
-- [ ] Print file:line (`function.caller`)
-- [ ] Print function name
-- [ ] Print argument names
-- [ ] Separates batch of writes with a blank line or a separator (similar to the [GO `q` module](https://github.com/zestyping/q))
-- [ ] Publish to NPM registry on Tag
-- [ ] [JSdoc](http://usejsdoc.org)
-- [ ] Print stacktrace: `s()` (see [stackman](https://www.npmjs.com/package/stackman))
-- [ ] Prevent shipping in production code using an ESLint rule, or a custom ESLint plugin
-- [ ] (maybe) Typescript Decorator `@q` for function (and class)
-- [ ] (maybe) Print time spent
-
 ## FAQ
 
 ### Haven't I seen this somewhere before?
