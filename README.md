@@ -1,5 +1,11 @@
 # ⚡ Quick-and-dirty debugging output for tired JS programmers
 
+<div align="center">
+
+<img src="docs/logo.png" title="Q.JS" alt="Q.JS Logo">
+
+</div>
+
 [![Version](https://img.shields.io/npm/v/qqd.svg?style=for-the-badge)](https://www.npmjs.com/package/qqd)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/tomsquest/q.js/check?style=for-the-badge)
 
