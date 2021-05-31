@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.0] - 2019-05-31
+
+### Added
+
+- Feat: log file and code location from where q() was invoked.
+
+For example:
+
+```
+8:58:14 AM /home/tom/Dev/code.js:19:15 > MyClass.myMethod()
+{
+  foo: "bar"
+}
+```
+
 ## [1.5.1] - 2019-05-20
 
 ### Fixed
