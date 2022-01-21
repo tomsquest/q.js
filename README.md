@@ -9,6 +9,37 @@
 [![Version](https://img.shields.io/npm/v/qqd.svg?style=for-the-badge)](https://www.npmjs.com/package/qqd)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/tomsquest/q.js/check?style=for-the-badge)
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+## Table of contents
+
+- [
+  ](#)
+- [What is Q](#what-is-q)
+- [Sample output of using `q()`](#sample-output-of-using-q)
+- [Why is this better than `console.log`?](#why-is-this-better-than-consolelog)
+- [Changelog](#changelog)
+- [Install](#install)
+- [Usage](#usage)
+- [Shell Integration](#shell-integration)
+  - [ZSH Plugin for Q](#zsh-plugin-for-q)
+- [Editor integrations](#editor-integrations)
+  - [Jetbrains Intellij and Webstorm](#jetbrains-intellij-and-webstorm)
+    - [For JavaScript:](#for-javascript)
+    - [For TypeScript:](#for-typescript)
+    - [Sample usage](#sample-usage)
+- [FAQ](#faq)
+  - [Haven't I seen this somewhere before?](#havent-i-seen-this-somewhere-before)
+  - [Why `q`?](#why-q)
+  - [Why the npm module is called `qqd`?](#why-the-npm-module-is-called-qqd)
+  - [Is `q` safe for concurrent use?](#is-q-safe-for-concurrent-use)
+  - [What about production?](#what-about-production)
+  - [How to prevent calls to Q in production?](#how-to-prevent-calls-to-q-in-production)
+  - [Haven't I seen this README somewhere before?](#havent-i-seen-this-readme-somewhere-before)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## What is Q
 
 > **`q`** is a better way to do print statement debugging.
